@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        Here are the updated use cases with triggers included:
+
+### **Use Case 1: User Registration/Login**
+
+**Actors**: Fresher (User)
+
+**Trigger**: The fresher accesses the website and attempts to use features that require authentication, such as searching for professionals or booking an appointment.
+
+**Description**: This use case describes how a fresher registers or logs into the system to access services.
+
+**Preconditions**:
+- The fresher has access to the website.
+
+**Main Flow**:
+1. **User Registration**:
+   - The fresher selects the option to register.
+   - The system presents a registration form.
+   - The fresher fills in the required information (name, email, password, etc.).
+   - The fresher submits the registration form.
+   - The system securely stores the fresher's information and sends a confirmation email.
+   - The fresher clicks the confirmation link in the email.
+   - The system verifies the email and activates the fresher's account.
+
+2. **User Login**:
+   - The fresher selects the option to log in.
+   - The system presents a login form.
+   - The fresher enters their email and password (or uses the SSO option).
+   - The system verifies the credentials.
+   - If the credentials are valid, the system grants access to the fresher.
+   - If the credentials are invalid, the system prompts the fresher to try again or register if they don't have an account.
+
+**Alternate Flow**:
+- **Unregistered User Tries to Log In**:
+  - If the fresher tries to log in without an account, the system suggests registration and redirects them to the registration page.
+
+**Postconditions**:
+- The fresher is successfully logged in and redirected to the user dashboard or is registered and can log in.
+
+### **Use Case 2: Professional Registration**
+
+**Actors**: Software Professional
+
+**Trigger**: A software professional decides to offer guidance on the platform and accesses the website to register.
+
+**Description**: This use case describes how a software professional registers to offer guidance services.
+
+**Preconditions**:
+- The professional has access to the website.
+
+**Main Flow**:
+1. The professional selects the option to register as a professional.
+2. The system presents a registration form specifically for professionals.
+3. The professional fills in the required information (name, email, expertise, experience, availability, etc.).
+4. The professional submits the registration form.
+5. The system securely stores the professional's information and sends a confirmation email.
+6. The professional clicks the confirmation link in the email.
+7. The system verifies the email and activates the professional's account.
+8. The system may verify the professional's credentials (optional step for added security).
+9. The professional can then customize their profile (e.g., add a bio, set availability).
+
+**Postconditions**:
+- The professional is successfully registered and can log in to manage their profile and availability.
+
+### **Use Case 3: User Search and Filter**
+
+**Actors**: Fresher (User)
+
+**Trigger**: The fresher logs into the system and decides to find a suitable professional for career guidance.
+
+**Description**: This use case describes how a fresher searches for and filters software professionals based on specific criteria.
+
+**Preconditions**:
+- The fresher is logged into the system.
+
+**Main Flow**:
+1. The fresher navigates to the search page.
+2. The system presents a search interface with input fields for criteria like job role, experience level, specialization, and availability.
+3. The fresher enters their desired search criteria.
+4. The fresher submits the search request.
+5. The system processes the search and displays a list of professionals that match the criteria.
+6. The fresher applies additional filters (if necessary) to narrow down the results.
+7. The fresher clicks on a professional's profile to view more details.
+
+**Postconditions**:
+- The fresher is presented with a list of professionals matching their search criteria and can view detailed profiles.
+
+### **Use Case 4: Book Appointment**
+
+**Actors**: Fresher (User), Software Professional
+
+**Trigger**: The fresher finds a suitable professional and decides to book an appointment for a guidance session.
+
+**Description**: This use case describes how a fresher books an appointment with a software professional.
+
+**Preconditions**:
+- The fresher has found a suitable professional through the search functionality.
+- The fresher is logged into the system.
+
+**Main Flow**:
+1. The fresher navigates to the selected professional's profile page.
+2. The system displays the professional’s available time slots.
+3. The fresher selects a preferred time slot.
+4. The system prompts the fresher to confirm the appointment details.
+5. The fresher confirms the appointment.
+6. The system directs the fresher to the payment gateway.
+7. The fresher enters payment details and submits the payment.
+8. The system processes the payment and confirms the booking.
+9. The system sends a confirmation email to both the fresher and the professional, including the appointment details and the Zoom/Google Meet link for the session.
+
+**Alternate Flow**:
+- **Payment Failure**:
+  - If the payment fails, the system notifies the fresher and prompts them to retry the payment process.
+
+**Postconditions**:
+- The appointment is successfully booked, and both the fresher and the professional receive confirmation emails with the session details.
+
+These use cases now include triggers, which clarify the specific conditions or actions that initiate each process within the system.
+    </pre>
+</body>
+</html>
